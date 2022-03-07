@@ -1,0 +1,3 @@
+**/bazel-*
+**/.bundle
+**/vendor/bundle/**
