@@ -9,4 +9,7 @@ class Conference
   end
 end
 
-Conference.new()
+Conference.new(title: "hoge", year: 2022)
+
+# type error
+# Conference.new()

@@ -30,6 +30,7 @@ calc.max0("foo", "bar")
 calc.max1("foo", "bar")
 calc.max2("foo", "bar")
 
-calc.max0(true, false)
-calc.max1(true, false)
-calc.max2(true, false)
+# type error
+# calc.max0(true, false)
+# calc.max1(true, false)
+# calc.max2(true, false)
