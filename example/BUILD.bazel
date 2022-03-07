@@ -1,0 +1,16 @@
+load("@bazelruby_rules_ruby//ruby:defs.bzl", "ruby_library")
+load("//steep:def.bzl", "steep_check")
+
+ruby_library(
+    name = "lib",
+    srcs = glob(["lib/**/*.rb"]),
+    deps = [],
+)
+
+steep_check(
+    name = "typecheck",
+    bin = "@bundle_example//:bin/steep",
+    dir = "./example",
+    srcs = ["Steepfile", ":lib"] + glob(["sig/**/*.rbs"]),
+    deps = [":lib", "@bundle_example//:bin"],
+)

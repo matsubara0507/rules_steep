@@ -1,0 +1,5 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+gem "steep", github: "matsubara0507/steep", ref: "59b1f98184587053b8ae1df32d7c811acf27ed64"
