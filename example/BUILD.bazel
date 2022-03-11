@@ -1,4 +1,4 @@
-load("@bazelruby_rules_ruby//ruby:defs.bzl", "ruby_library")
+load("@bazelruby_rules_ruby//ruby:defs.bzl", "ruby_library", "ruby_test")
 load("//steep:def.bzl", "steep_check")
 
 ruby_library(
@@ -11,6 +11,19 @@ steep_check(
     name = "typecheck",
     bin = "@bundle_example//:bin/steep",
     dir = "./example",
+    srcs = ["Steepfile", ":lib"] + glob(["sig/**/*.rbs"]),
+    deps = [":lib", "@bundle_example//:bin"],
+)
+
+# steep_check above is equivalent ruby_test below
+ruby_test(
+    name = "typecheck-test",
+    main = "@bundle_example//:bin/steep",
+    args = [
+        "check",
+        "--steepfile=example/Steepfile",
+        "--steep-command=example/typecheck-test",
+    ],
     srcs = ["Steepfile", ":lib"] + glob(["sig/**/*.rbs"]),
     deps = [":lib", "@bundle_example//:bin"],
 )
