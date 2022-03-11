@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/matsubara0507/steep.git
-  revision: 1f0a384202d52cbe7187b4a2d4eed620d3997178
-  ref: 1f0a384202d52cbe7187b4a2d4eed620d3997178
+  revision: 64ced3af5657ff5c2ae72054c86cd5d82da93a1c
+  ref: 64ced3af5657ff5c2ae72054c86cd5d82da93a1c
   specs:
-    steep (0.48.0)
+    steep (0.49.0)
       activesupport (>= 5.1)
       language_server-protocol (>= 3.15, < 4.0)
       listen (~> 3.0)
@@ -16,7 +16,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.2.2)
+    activesupport (7.0.2.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
