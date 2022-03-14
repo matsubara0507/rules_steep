@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/matsubara0507/steep.git
-  revision: 64ced3af5657ff5c2ae72054c86cd5d82da93a1c
-  ref: 64ced3af5657ff5c2ae72054c86cd5d82da93a1c
+  revision: 3ae9a39c459c076d46bff9d6796a54646b112341
+  ref: 3ae9a39c459c076d46bff9d6796a54646b112341
   specs:
     steep (0.49.0)
       activesupport (>= 5.1)

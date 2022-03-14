@@ -2,4 +2,4 @@
 
 source "https://rubygems.org"
 
-gem "steep", github: "matsubara0507/steep", ref: "64ced3af5657ff5c2ae72054c86cd5d82da93a1c"
+gem "steep", github: "matsubara0507/steep", ref: "3ae9a39c459c076d46bff9d6796a54646b112341"
